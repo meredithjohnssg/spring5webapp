@@ -60,6 +60,14 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -101,5 +109,9 @@
 		</pluginRepository>
 	</pluginRepositories>
 
+	<scm>
+		<developerConnection>scm:git:git@github.com:meredithjohnssg/spring5webapp.git</developerConnection>
+		<tag>spring5-webapp-0.0.1</tag>
+	</scm>
 
 </project>
